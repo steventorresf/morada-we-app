@@ -2,6 +2,7 @@ import { Fragment } from "react"
 import { PropertyTypeButton } from "./components/PropertyTypeButton"
 import { PropertiesTypesContainer } from "./styles"
 import { IoBusinessSharp, IoHome, IoMap, IoPrism, IoLocation } from "react-icons/io5";
+import { PropertyCard } from "./components/PropertyCard";
 
 const PropertiesType = [
     {icon: IoBusinessSharp, label: 'Apartamentos'},
@@ -20,5 +21,7 @@ export const Home = () => (
                 PropertiesType.map(item => <PropertyTypeButton icon={item.icon} label={item.label} />)
             }
         </PropertiesTypesContainer>
+
+        <PropertyCard />
     </Fragment>
 )
